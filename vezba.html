@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+*{
+	margin: 0;
+	padding: 0;
+}
+	body{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100vh;
+	}
+
+	div{
+		width: 100%;
+		height: 100%;
+		background-color: red;
+	}
+img{
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+</style>
+<body>
+<div>
+<img class='slika' src="img/home-o-rings.jpg" alt="">
+<img class='slika' src="img/Vibration-Mount_Center-Bonded (1).jpg" alt="">
+<img class='slika' src="img/Untitled-1.gif" alt="">
+<img class='slika' src="img/home-custom-shapes.jpg" alt="">
+<img class='slika' src="img/home-seals.jpg" alt="">
+<img class='slika' src="img/home-engineering.jpg" alt="">
+</div>	
+<script>
+
+galerija ('.slika',4000)
+
+
+
+function galerija (clas,time) {
+	var x='';
+	var brojac=0;
+	var img=document.querySelectorAll( clas )
+	console.log(img)
+	var div=document.querySelector('div')
+	prikazi (img[brojac])
+	div.addEventListener('mousemove',mouse)
+	div.addEventListener('click',klick)
+	function mouse (e) {
+		console.log((e.offsetX+1), div.offsetWidth);
+		if((div.offsetWidth/2)>(e.offsetX+1)){
+			console.log('levo')
+			x='levo'
+		} 
+		else {
+			console.log('desno')
+			x='desno'
+		}
+	}
+	function klick () {
+		none( img[brojac] )
+		if (x==='levo') {
+			--brojac;
+		}
+		else {
+			++brojac;
+
+		}
+		provera ()
+		prikazi (img[brojac])
+	}
+	setInterval(napred,time)
+	function napred () {
+		none( img[brojac] )
+		++brojac;
+		provera ()
+		prikazi (img[brojac])
+	}
+
+
+	function none (argument) {
+		argument.style.display='none'
+	}
+	function prikazi (image) {
+		console.log(image)
+		image.style.display='block'
+		// body... 
+	}
+	function provera () {
+			if (brojac>=img.length) {
+			brojac=0;
+		}
+		if (brojac<0) {
+			brojac=img.length-1;
+		}
+	}
+	}
+</script>
+
+</body>
+</html>

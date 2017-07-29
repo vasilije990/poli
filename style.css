@@ -1,0 +1,1850 @@
+*{ 
+	margin: 0; 
+	padding: 0;
+	color:#555;
+	font-family: "Gotham A","Gotham B","Open Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,"Segoe UI",Arial,sans-serif;
+}
+
+li{
+	list-style-type: none;
+}
+td{
+	vertical-align: top;
+}
+p, button {
+	font-size: 18px;
+ 	margin: 0 0 10px;
+ 	color: #555555;
+    background-color:transparent;
+   font-family: "Gotham A","Gotham B","Open Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,"Segoe UI",Arial,sans-serif;
+    font-weight: 300;
+}
+
+h1{
+	font-size: 40px;
+	margin-bottom: 5%;
+	display: inline-block
+}
+
+nav{ 
+	display: flex !important;
+	padding: 1% !important;
+	background-color: rgba(47, 47, 47,1);
+	transition: 0.6s all;
+ }
+/*
+.navColor{
+	background-color: white;
+	border-bottom: 1px solid #ccc;
+
+}
+*/
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	transition: 0.6s all;
+	background-color: rgba(253,117,37);
+}
+
+ nav div { 
+ 	flex: 1;
+
+ }
+
+ nav div img{ 
+	width: auto;
+    height: 100%;
+	transition: 0.6s all;
+ }
+
+.navLogo{
+	width: auto;
+    height: 90%;
+}
+.width0{
+	/*width: 0 !important;*/
+	right: -65% !important;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+ nav ul { 
+	display: flex;
+	align-items: center;
+	margin-right: 3%;
+	justify-content: flex-end;
+}
+
+nav ul li { 
+	list-style-type: none;
+	padding: 0px 20px;
+}
+
+nav ul li a { 
+	text-decoration: none;
+	color: white;
+	opacity: 1;
+	position: relative;
+    padding: 20px 0;
+    display: block;
+    top: 0;
+    transition: 500ms top ease;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizelegibility;
+}
+nav ul li span { 
+	height: 64px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 10px 0;
+}
+.red{
+	color: rgb(245, 44, 44) !important;
+}
+.red p, .red i{
+	color: rgb(245, 44, 44) !important;
+}
+.block{
+	display: block !important;
+}
+/*
+.activeLine:after {
+    content: "";
+    height: 4px;
+    background: #c63a46;
+    width: 0%;
+    display: block;
+    transition: 0.6s all;
+    margin-top: 4px;
+} */
+.black {
+	color: white !important;
+}
+.active:after {
+    width: 100%; 
+ } 
+
+nav ul li:hover span a {
+	top: -64px;
+}
+
+nav ul li:hover.flag a{
+    background-color: rgb(39, 39, 39);
+}
+
+nav ul li a img {
+	width: 30px;
+}
+
+.flag{
+	display: flex;
+    justify-content: flex-end;
+    z-index: 55;
+    position: relative;
+    background-color: rgba(47, 47, 47,1);
+
+    padding-right: 30px;
+}
+
+.flag a{
+	padding: 5px;
+
+
+}
+
+.flag a img{
+   -webkit-filter: grayscale(70%); 
+    filter: grayscale(70%);
+}
+
+.flag a img:hover {
+   -webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
+}
+
+.sectionFirst{
+	width: 100%;
+	height: 115vh;
+	position: relative;
+	/*background-image: url(img/naslovna.jpg);*/
+/*	background-size: cover;
+	display: flex;
+	justify-content: flex-end !important;
+	align-items: center;
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0% 100%;*/
+}
+.sectionFirstContact{
+	background-image: url(img/Contact-us-HD.jpg);
+	height: 70vh;
+/*	-webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+*/}
+.sectionFirstMaterial{
+	background-image: url(img/home-o-rings.jpg);
+	height: 70vh;
+/*	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+*/}
+.sectionFirstGalerija{
+	background-image: url(img/video-bg.jpg);
+	height: 70vh;
+/*	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);*/
+}
+.sectionFirstMaterial, .sectionFirstGalerija, .sectionFirstContact, .sectionFirstProduct{
+	width: 100%;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    margin-top: 62px;
+    position: relative;
+	
+}
+.sectionFirstProduct{
+	background-image: url(img/home-custom-shapes.jpg);
+	height: 70vh;
+/*	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+*/}
+ .sectionFirstContact .overlay{
+	height: 70vh;
+	background-image: url(img/overlay.png);
+	width: 0;
+	height: 111%;
+	position: absolute;
+	top: 0;
+}
+
+.sectionFirstMaterial, .sectionFirstGalerija .overlay, .sectionFirstContact .overlay,
+.sectionFirstProduct .overlay{
+	height: 70vh;
+}
+.sectionFirstMaterial h1,.sectionFirstGalerija h1, .sectionFirstProduct h1, .sectionFirstContact h1{
+	color: white;
+	/*position: fixed;*/
+	font-size: 5em;
+	
+}
+
+.overlay{
+	background-image: url(img/overlay.png);
+	width: 0;
+	height: 111%;
+	position: absolute;
+	top: 0;
+}
+
+.textHome{
+	margin-right: 10%;
+	height: 80%;
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	float: right;
+	-webkit-animation-delay: 0.5s;
+}
+.centerText{
+	width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+.textHome h1, .textHome h3{
+	-webkit-font-smoothing: antialiased;
+	color: white;
+	font-size: 4em;
+}
+
+.textHome h1{
+	font-size: 40px;
+	position: relative;
+	top: 95;
+	opacity: 1;
+	transition: 299ms top ease;
+	transition: 200ms opacity ease;
+}
+
+.efekatSlova{
+	top:0 !important;
+	opacity: 1 !important;
+}
+
+.textHome h3{
+	font-size: 23px
+}
+
+.history, .proivodni, .proivodni p{
+	padding: 0 13% 5% 13%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+} 
+.history{
+	background-image: url(img/why_rubber_header.jpg);
+	background-size: cover;
+	background-position: center center;
+/*	-webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+	clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);*/
+	margin-top: -7%;
+}
+
+.historyBox{
+	padding: 0 7%;
+	width: 100%;	
+}
+
+.historyText{
+	width: 50%;
+	padding:20% 0 20% 0;
+	text-align: justify;
+
+}
+.historyText h1 , .historyText p{
+	background-color: transparent;
+}
+
+/*.title:after {
+    content: "";
+    height: 4px;
+    background: #c63a46;
+    width: 100%;
+    display: block;
+}*/
+
+.button{
+	padding: 20px;
+	background-color: rgba(198, 58, 70, 0.7);
+	color: white;
+	border: 0;
+	transition: 0.3s;
+	margin-top: 20px;
+}
+
+.button:hover{
+	background-color: rgba(198, 58, 70, 1);
+}
+
+.grupaProizvoda{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom: 5%;
+}
+
+.proizvodDiv{
+	width: 33.33%;
+	height: 40vh;
+	position: relative;
+	overflow: hidden;
+
+}
+
+.overlayProizvod{ 
+	z-index: 5;
+ 	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	overflow: hidden;
+ }
+
+.overlayProizvod h1{  
+	color:white;
+	line-height: 1em;
+	text-align: left;
+}
+
+.proizvodDiv img, .overlayProizvod{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.6s all;
+}
+
+.proizvodDiv:hover .overlayProizvod{
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.proizvodDiv:hover img{
+	transform: scale(1.2,1.2);
+}
+.proizvodDiv .overlayProizvod p {
+	display: none;
+	background-color: transparent;
+	text-align: center;
+	color: white;
+}
+.proizvodDiv .overlayProizvod:hover p{
+	display: flex;
+}
+
+.proivodni {   
+	padding: 7% 0;
+}
+.galerija{
+	margin:10%;
+	text-align: center;
+}
+.nGY2GThumbnailTitle{
+	transition: 0.5s all;
+	position: absolute !important;
+    bottom: 0 !important;
+    background: rgba(204,204,204,0.5) !important;
+    padding: 15px !important ;
+    font-size: 1.5em !important;
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%) !important;
+}
+
+footer {
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	background-image: url(img/footer-background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.overlayfooter{
+	width: 100%;
+	height: 100%;
+	background: rgba(36,36,36,.96);
+/*	background-color: rgba(204,204,204, 0.3);
+	background-image: url(img/footer-background-011.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;*/
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+form{
+	z-index: 55555;
+	padding-bottom: 5%;
+	width: 50%;
+}
+
+footer{
+	position: relative;	
+	background-image: url(img/footer-back.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	-webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+	clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+	text-align:center;	
+	-webkit-clip-path: url("footer");
+    clip-path: url("footer");
+}
+footer .titleFooter{
+	background-color: rgba(36,36,36,1);
+	position: relative;	
+	top:0;
+	left: 0;	
+	display: block;
+	width: 	100%;
+	z-index:33;
+	font-family: "Neo Sans Pro";
+    font-weight: 300;
+    font-size: 44px;
+    text-align: center;
+    
+}
+footer h3{
+	margin: 10% 0% 5% 0%;
+	color: 	white;	
+}
+
+footer input,footer textarea {
+	border: 2px solid #e1e1e1;
+    border-bottom: 4px solid #e1e1e1;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 15px 10px;
+    height: auto;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555;
+    vertical-align: middle;
+    background-color: #fff;
+    background-image: none;
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-appearance: textfield;
+    user-select: text;
+    cursor: auto;
+}
+
+footer input:focus,footer textarea:focus{ 
+	border-color: #de525e;
+	outline: -webkit-focus-ring-color auto 0px;
+}
+.form {
+    margin-bottom: 15px;
+}
+footer button{
+	float: left;
+}
+.kontakt{
+	padding-top: 15%;
+	padding-bottom: 5%;
+	color: white;
+	z-index: 123;
+	text-align: center;
+	width: 50%;
+}
+.kontakt table{
+	width: 100%;
+}
+.kontakt li{
+	list-style-type: none;
+}
+
+.kontakt .social{
+	width:49%;
+	float:right;
+	display: inline-block;
+	background-color: red;
+}
+.kontakt table td li:first-child {
+	padding-top: 0;
+
+} 
+.kontakt td{
+	padding-bottom:3%;
+	vertical-align: top;
+	text-align: left;
+}
+.kontakt td, .kontakt td li, .kontakt td span {
+	color: white;
+	font-size: 20px;
+	opacity: 0.9;
+}
+.kontakt td span{
+	font-weight: bold;
+		opacity: 1;
+}
+.kontakt td li{
+	vertical-align: top;
+}
+footer .social-links {
+    text-align: left;
+}
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+footer .social-links li {
+    display: inline-block;
+    font-size: 44px;
+    margin: 0 10px;
+}
+footer .button{
+	background-color: rgba(222,82,94,0.7);
+}
+footer .social-links li a {
+    color: #e0e0e0;
+    -moz-transition: .2s all;
+    -o-transition: .2s all;
+    -webkit-transition: .2s all;
+    transition: .2s all;
+	text-decoration: none;
+}
+footer .social-links li a i:hover {
+    color: rgba(222,82,94,1);
+}
+
+.Contact{
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 10%;
+	margin-top: 10%;
+
+}	
+
+.maps{
+	width: 70%;
+	position: relative;
+
+}
+.contSection{
+	display: inline-block;
+	width: 30%;
+}
+.maps .overlay{
+ 	background-image: none;
+ 	height: 100%;
+ 	width: 0;
+ 	position: absolute;
+ 	z-index: 2334;
+ 	top: 0;
+ 	left: 0; 
+ }
+#map{
+	height: 100vh;
+    width: 100%;
+}
+.contSection{
+	position: absolute;
+	width: 37%;
+	height:70%;
+	background-color: rgba(255, 255, 255, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	top: 15%;
+	left: 0;
+	z-index: 1;
+}
+
+.Product{
+	padding-bottom:700px;
+	margin:5% 10% 5% 10%;
+	box-shadow: 10px 10px 5px #888888;
+}
+.contSection td{
+	padding-right: 4%;
+    padding-bottom: 4%;
+}
+.contSection table{
+	padding-left: 10%;
+}
+.contSection .fa{
+	font-size: 30px;
+    color: #c63a46;
+}
+.contSection td li{
+	font-size: 20px;
+    padding: 1%;
+}
+.tabelaCentar {
+	vertical-align: middle;
+	font-size: 20px;
+}
+.vasa td{
+	text-align: center;
+}
+.vasa{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 5vw;
+	
+}
+.vasa tr{
+	padding: 20px;
+}
+.kontakt1   .fa{
+	font-size:50px;
+	color:rgba(255,255,255,0.5);}
+
+
+.vasa  td{
+/*	padding: 0px 10px 20px 10px;*/
+}
+.vasa span{
+	font-size: 1.2em;
+	color: rgba(255,255,255,1);
+	font-weight: 100;
+}
+.kontakt1{
+	padding-top: 5vw;
+	padding-bottom: 5vw;
+	color: white;
+	z-index: 123;
+	text-align: center;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.kontakt1 table{
+	width: 100%;
+}    
+.sectionFirstMaterial{
+	
+}
+.Klijenti{
+	width: 100%;
+}
+
+.kocka span{
+	list-style-type: square;
+	display: inline-block;
+	float: left;
+
+}
+
+.kocka{
+	position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60%;
+	padding-right: 3%;
+    margin-bottom: -25px;
+    background-color: rgb(245, 44, 44);
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
+    transition: 500ms right ease;
+    overflow: hidden;
+ /*   background: -webkit-linear-gradient(top, #ff6600 , rgb(47, 47, 47)); 
+    background: -o-linear-gradient(top, #ff6600, rgb(47, 47, 47)); 
+    background: -moz-linear-gradient(top, #ff6600, rgb(47, 47, 47)); 
+    background: linear-gradient(to top, #ff6600 , rgb(47, 47, 47))*/
+}
+.kocka p{
+	margin: 0;
+	display: inline-block;
+    padding: 0.5% 0;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 33px;
+    font-family: "Gotham A","Gotham B","Open Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,"Segoe UI",Arial,sans-serif;
+	display: flex;
+    justify-content:center;
+    width: 100%;
+}
+.kocka span{
+	color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-family: "Gotham A","Gotham B","Open Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,"Segoe UI",Arial,sans-serif;
+	display: flex;
+    justify-content:center;
+    width: 100%;
+}
+
+.flag ul{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+    margin: 0;
+    flex-direction: row;
+    bottom:-259px;
+
+}
+.flag:hover ul{
+	display: flex !important;
+}
+.flag ul:hover ul {
+	display: flex !important;
+}
+
+.galerija button{
+	color: black;
+}
+.industrije li {
+	display: inline-table;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    width: 300px;
+    height: 260px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.industrije{
+	padding: 0 10% 5% 10%;
+	background-color: rgb(245, 245, 247);
+	text-align: center;
+	padding-top: 12%;
+    margin-top: -7%;
+}
+.industrije li{
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.traka{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(245, 44, 44, 0.7);
+	text-align: left;
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	height: 74px;
+}
+.traka p{
+	padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+}
+.prehrambene{
+	background-image: url(img/Industrije/prehrambena.jpg);
+}
+.mlekarske{
+	background-image: url(img/Industrije/mlekarska.jpg);
+}
+.pivarske{
+	background-image: url(img/Industrije/pivara.jpg);
+}
+.pekarske{
+	background-image: url(img/Industrije/pekara.jpg);
+}
+.masinske{
+	background-image: url(img/Industrije/masinska.jpg);
+}
+.drvnopreradjivacke{
+	background-image: url(img/Industrije/drvnopreradjivacka.jpg);
+}
+.tekstilne{
+	background-image: url(img/Industrije/tekstilna.jpg);
+}
+.hemijske{
+	background-image: url(img/Industrije/hemiska.jpg);
+}
+.rudarske{
+	background-image: url(img/Industrije/rudarstvo.jpg);
+}
+.putarske{
+	background-image: url(img/Industrije/putarska.jpg);
+}
+.robotike{
+	background-image: url(img/Industrije/robotika.jpg);
+}
+.vojnaindustrija{
+	background-image: url(img/Industrije/industries_defense.jpg);
+}
+.PapirnaIGraficka{
+	background-image: url(img/Industrije/PapirnaIGraficka.jpg);
+}
+.masineG{
+	background-image: url(img/Industrije/masineG.jpg);
+}
+.plastikaPogon{
+	background-image: url(img/Industrije/plastikaPogon.jpg);
+}
+.namenska{
+	background-image: url(img/Industrije/namenska.jpg);
+}
+.Naftna{
+	background-image: url(img/Industrije/Naftna.jpg);	
+}
+.alkohol{
+	background-image: url(img/Industrije/alkohol.jpg);
+}
+.flag a img{
+	width: 30px;
+}
+.leftNav{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.navBar{
+	padding-bottom: 10px;
+}
+.materijali{
+	display: flex;
+	border-left: 1px solid black;
+	/*background-image: url(img/about-bg.png);*/
+	padding: 5% 10%;
+}
+.materialDiv{
+	display: none;
+	border-left: 1px solid black;
+	padding-left: 20px;
+}
+.materialDiv p, .materijali ol li{
+	color:black;
+	text-align: justify;
+	font-weight: 0;
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+.materijali aside{
+	
+	color: red;
+	height: 100%;
+	padding-left: 20px;
+}
+
+.materijali aside li{
+	padding: 20px 40px;
+	display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    cursor:pointer;
+}
+.materijali aside li:hover{
+	opacity: 0.7;
+}
+.materijali aside li p{
+	display: inline-block;	
+	color: black;
+	padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding-right: 20px;
+}
+
+.materijali aside li span{
+	font-size: 22px;
+	font-weight: bolder;
+}
+.materijali ol {
+	list-style-position:inside;
+	padding-left: 2%;
+}
+
+.materijali ol li {
+	list-style-type: upper-roman;
+	padding-bottom: 2%;
+
+
+}
+ .tableMaterijal{
+ 	width: 100%;
+ 	display: flex;
+ 	justify-content: center;
+ 	padding: 5% 0;
+ }
+.tableMaterijal td{
+	padding:15px;
+}
+.tableMaterijal td:first-child{
+	font-weight: bold;
+ }
+.tableMaterijal th{  
+	text-align: left;
+	background-color: rgba(200,200,200,0.9)
+ }
+.tableMaterijal tr:nth-child(even){  
+	background-color: rgba(240,240,240,0.9)
+ }
+
+.materijalText{
+	padding-bottom: 100px;
+
+}
+
+.materijalText img{
+	width: 50%;
+	height: auto;
+    /*-webkit-filter: grayscale(62%);
+    filter: grayscale(62%);*/
+    position: relative;
+    float: right;
+    padding: 1%;
+}
+.overlayIndustrija{
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.proizvodni{
+	padding: 5% 10% 5% 10%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(234, 234, 236);
+
+
+}
+
+.overlayMater{
+	display: block;
+	z-index: 54546;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: rgba(33,33,33); /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left,rgba(255,0,0,0),rgba(255,0,0,1)); /*Safari 5.1-6*/
+	background: -o-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1)); /*Opera 11.1-12*/
+	background: -moz-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1)); /*Fx 3.6-15*/
+	background: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,1)); /*Standard*/
+}
+
+
+.proizvodni h1{
+	display: block;
+	width: 100%;
+	text-align: center;
+
+}
+.proizvod p{
+	z-index: 0;
+	display: block;
+	width: 100%;
+	padding:20px 0 20px 20px;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: black;
+	margin-bottom: 20px;
+	transition: 400ms left ease;
+	position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255,0.4);
+    font-weight: bold;
+
+		
+}
+.proizvod{
+	width:330px;
+	height: 300px;
+	display: inline-table;
+	position: relative;
+	overflow: hidden;	
+	margin-right: 30px;
+	margin-bottom: 30px;
+
+}
+.proizvodslika {
+	width: 100%;
+	height:300px;
+	background-size: cover;
+	background-position: center center;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: 400ms filter ease;
+    transition: 400ms transform ease;
+}
+.proizvod:hover .proizvodslika{
+	-webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    transform: scale(1.2);
+}
+.proizvod:hover p{
+
+	z-index: -1;
+}
+.prsten	{
+	background-image: url(img/proizvodi/IMG_20170208_131940.jpg);
+}
+.proizvod img{
+	width: 100%;
+}
+.deoPliureten{
+	background-image: url(img/proizvodi/poliuretenskiDeo.jpg);
+}
+.membrane{
+	background-image: url(img/proizvodi/membrane.jpg);
+}
+.odbojnik{
+	background-image: url(img/proizvodi/odbojnik.jpg);
+}
+.nosac{
+	background-image: url(img/proizvodi/nosac.jpg);
+}
+.vakumGume{
+	background-image: url(img/proizvodi/vakumGume.jpg);
+}
+.leptir{
+	background-image: url(img/proizvodi/leptir.jpg);
+}
+.rotorGumirani{
+	background-image: url(img/proizvodi/rotorGumirani.jpg);
+}
+.tocakGumiran{
+	background-image: url(img/proizvodi/tocakGumiran.jpg);	
+}
+#poliureten, #plastika, #guma  {
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%; 
+	background-color: white;
+}
+#poliureten{
+	background-color: white;
+}
+
+#plastika{
+	/*background-color:rgb(230, 227, 220); */
+}
+table{
+	border-collapse: collapse;
+}
+td:nth-child(even){
+/*	border-left: 1px solid black;*/
+}
+td{
+	padding: 10px;
+	text-align:left;
+}
+th{
+	padding: 10px;
+}
+
+.hrMaterijal{
+    margin: 5% auto;
+    text-align: left;
+}
+
+#plastika .hrMaterijal h1{
+	/*background-color: rgb(230, 227, 220);	*/
+}
+
+.hrMaterijal h1{
+    margin-bottom: 0%;
+ 
+  	/*padding: 0 26px;*/
+}
+
+.slider .indicators .indicator-item {
+  background-color: #666666;
+  border: 3px solid #ffffff;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.slider .indicators .indicator-item.active {
+  background-color: #ffffff;
+}
+.slider {
+  width: 900px;
+  margin: 0 auto;
+}
+.slider .indicators {
+  bottom: 60px;
+  z-index: 100;
+  /* text-align: left; */
+}
+
+.poxetnaSlajder{
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: none;
+}
+.slajd1{
+	background-position: center;
+	background-image: url(img/naslovna.jpg);
+}
+.slajd2{
+	background-image: url(img/SLS-piston-idaho-steel-short-run-end-use.png);
+	background-position: 0 60px;
+}
+.slajd2 .textHome{
+    width: 40%;
+    clear: both;
+    float: right;
+}
+
+.slajd3{
+	background-image: url(img/cnc_blue-1024x576.jpg);
+	overflow: hidden;
+	/*clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);*/
+}
+.logoResponsive{
+	display: none;
+}
+.mobMeni{
+	display: none;
+}
+
+.responsiveMeni{
+	display: none;	
+}
+.trougao1{
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 0 solid transparent;
+	border-right-width: 0px;
+	border-left-width: 100vw;
+	border-bottom: 8vw solid #d0d0d0;
+	bottom: 0;
+    right: 0;
+    z-index: 333;
+}
+.trou{
+	height: 8vw;
+    width: 100%;
+    overflow: hidden;
+}
+.trougao{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-left-width: 100vw;
+    border-right-width: 0px;
+    border-top: 8vw solid #eaeaec;
+    top: 0;
+    right: 0;
+    z-index: 5656565;
+    align-self: flex-end;
+}
+.trougao3{
+	position:relative;	
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	border: 0 solid transparent;
+	border-left-width: 50vw;
+	border-right-width: 50vw;
+	border-top: 8vw solid #f5f5f7;
+    background-color: #eaeaec;
+}
+
+.mobMeni  ul {
+    display: none;
+    align-items: center;
+    margin-right: 3%;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+	text-align: center;
+}
+.mobMeni  ul li {
+	border-bottom: 1px solid #6d6f71;
+}
+.mobMeni  ul li:last-child{
+	border:0;
+}
+.rastojanjeTable{
+	display: none;	
+}
+
+
+.velikaTabela{
+	display: block;	
+}
+.rastojanjeMalaTabela td{
+	padding-bottom: 30px !important;
+}
+.rastojanjeTable td{
+	padding-right: 30px !important;
+}
+
+.sectionFirstContact .trougao1, .sectionFirstGalerija .trougao1, .sectionFirstMaterial .trougao1, .sectionFirstProduct .trougao1{
+    border-bottom: 8vw solid #ffffff;
+}
+.kontaktTrougao{
+	border-top: 8vw solid #ffffff;
+}
+
+
+/*.galerija a{
+	width: 300px;
+	height: 300px;
+}
+*/
+/*.sectionFirstMaterial, .sectionFirstGalerija, , .sectionFirstProduct*/
+/*
+.mobMeni i:hover ul{
+	  display:  -webkit-flex;
+	  display: -moz-flex;
+	  display: -ms-flex;
+	  display: -o-flex;
+	  display: flex;;
+}*/
+.colorGalerija{
+	background: #f2f5f7;
+}
+.borderColorGalerija{
+	border-bottom-color: #f2f5f7 !important;
+}
+.borderColorGalerijaBottom {
+    border-top: 8vw solid #f2f5f7 !important
+}
+.galerija {
+	background: #f2f5f7;
+	position: relative;
+	width: 1168px;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items:stretch;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	
+}
+
+.velikaSlika{
+	margin: 0;
+	display: inline-block;
+	width: 584px;
+	position: relative;
+	height:100%;
+	cursor:pointer
+}
+.galerija img{
+	width: 100%;
+	height: 100%;
+
+}
+.srednjaSlika{
+	margin: 0;
+	display: inline-block;
+	width: 292px;
+	/*height:396px;*/
+	height: 100%;
+	cursor:pointer;
+	position: relative;
+}
+.malaSlika{
+	display: inline-block;
+	width: 292px;
+	/*height:198px;*/
+	height: 50%;
+	cursor:pointer;
+	position: relative;
+}
+.grupaMaleDesno, .grupaMaleLevo, .grupaVelika{
+	width:584px;
+}
+.grupaMaleDesno .malaSlika{
+	float: right;
+}
+
+.grupaMaleDesno .srednjaSlika{
+	float: left;
+}
+.grupaMaleLevo .malaSlika{
+	float: left;
+	
+}
+.grupaMaleLevo .srednjaSlika{
+	float: right;
+}
+
+.overGalerija{
+	position: absolute;
+	top: 0;	
+	left: 0;
+	background-color: rgba(0,0,0,0);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 500ms background-color ease;
+}
+.overGalerija .fa { 
+	opacity: 0;
+	font-size: 70px;
+	color: white;
+	margin-top: -20px;
+	transition: 500ms opacity ease;
+	transition: 500ms margin-top ease;
+}
+
+.velikaSlika:hover .overGalerija{
+	background-color: rgba(0,0,0,0.65);
+}
+.malaSlika:hover .overGalerija {
+	background-color: rgba(0,0,0,0.65);
+}
+.srednjaSlika:hover .overGalerija{
+	background-color: rgba(0,0,0,0.65);
+}
+.velikaSlika:hover .overGalerija .fa, .srednjaSlika:hover .overGalerija .fa,
+.malaSlika:hover .overGalerija .fa{
+	opacity: 1;
+	margin-top: 0px;
+
+}
+
+.materijalText ul li {
+	list-style-type: circle;
+    padding-left: 0%;
+    color: black;
+    margin-left: 5%;
+    font-size: 1.2em;
+
+}
+
+@media only screen and (max-width:1200px) {
+	*{
+	/*	font-size: 10px;*/
+	}
+    nav{
+       /*display: none !important;    */
+   }
+   .kocka span {
+   		font-size: 1em;
+   }
+   .industrije {
+    padding: 0 3% 5% 3%;
+    padding-top: 12%;
+    margin-top: -7%;
+	}
+	.history, .proivodni, .proivodni p {
+    	padding: 0 5% 5% 10%;
+    }
+    .proizvodni {
+    	padding: 0 5% 5% 5%;
+    }
+    .slajd1{
+        background-position-x:center;
+    }
+    nav{ 
+		padding: 1% 1% 0 1% !important;
+	}
+	.industrije li {
+    	margin-right: 2%;
+    	margin-bottom: 2%;
+	}
+	.galerija {
+		width: 968px;
+	}
+	.grupaMaleDesno, .grupaMaleLevo, .grupaVelika {
+    	width: 484px;
+	}
+	.velikaSlika{
+		width: 484px;
+	}
+	.srednjaSlika{
+		width: 242px;
+	}
+	.malaSlika{
+		width: 242px;
+	}
+
+}
+
+@media only screen and (max-width:1000px) {
+	.textHome h1 {
+    	font-size: 30px;
+    }
+    nav{
+       /*display: none !important;    */
+   }
+   .kocka span {
+   		font-size: 1em;
+   }
+   .kocka{
+   	position: relative;
+   	width: 94%;
+   }
+   nav div{
+   		display: none;
+   }
+   nav ul {
+    margin-right: 0%; 
+    justify-content: center;  
+	}
+	.width0 {
+    right: -105% !important;
+	}
+	.navBar {
+     padding-bottom: 0px; 
+	}
+	.logoResponsive{
+		display: block;
+	}
+	.flag{
+		align-items: flex-start;
+		padding-right: 0px; 
+	}
+	nav div img {
+    	width: 50%;
+	}
+	nav {
+    	padding: 3% 3% 0 3% !important;
+	}
+	.slajd3{
+		overflow: hidden;
+	}
+	.kocka span {
+    	font-size: 0.7em;
+	}
+
+	.sectionFirst {
+    	margin-top: 144px;  
+	}
+	.history, .proivodni, .proivodni p {
+    	padding: 0 0% 0% 5%;
+	}
+		form {
+    	width: 90%;
+	}
+	footer input, footer textarea {
+    	padding: 15px 0px 15px 10px;
+	}
+
+	footer .button {
+    	display: inline-block;
+    	width: 100%;
+	}
+	.proizvodni {
+    	padding: 0 3% 5% 3%;
+	}
+	.maps {
+    	width: 100%;  
+	}
+	.materijalText img {
+    	width: 100%;
+    	height: auto;
+	}
+	.materijali {
+    	padding: 3% 3%;
+	}
+	.materijali aside {
+    	padding-left: 0px;
+	}
+	.sectionFirstMaterial {
+    height: 110vh;
+	}
+	.galerija {
+		width: 720px;
+	}
+	.grupaMaleDesno, .grupaMaleLevo, .grupaVelika {
+    	/*width: 484px;*/
+    	display: block;
+    	width:100%;
+	}
+	.velikaSlika{
+		width: 720px;
+	}
+	.srednjaSlika{
+		width: 360px;
+	}
+	.malaSlika{
+		width: 360px;
+	}
+
+
+}
+@media only screen and (max-width:740px) {
+	.galerija {
+		width: 100%;
+	}
+	.grupaMaleDesno, .grupaMaleLevo, .grupaVelika {
+    	display: block;
+    	width:100%;
+	}
+	.velikaSlika{
+		width: 100%;
+	}
+	.srednjaSlika{
+		width: 50%;
+	}
+	.malaSlika{
+		width: 50%;
+	}
+}
+@media  screen and (max-width:600px), screen and (max-height: 360px){
+
+	nav{
+		padding: 0 !important;	
+	}
+	.flag ul {
+		padding-top: 10px;
+		padding-right: 10px;
+	}
+
+	.responsiveMeni{
+		display: 	block;	
+	}
+
+
+	.slajd2 {
+    	background-position: center;
+	}
+	.leftNav{
+		display:none;	
+	}
+	.mobMeni {
+    display: block;
+   }
+    .flag{
+	    width: 100%;
+    	flex-direction: column;
+    	align-items: flex-end;
+    }
+    .logoResponsive {
+    	display: block;
+    	width: 100%;
+    	text-align: center;
+	}
+	.mobMeni:before {
+    	left: 0;
+    	position: absolute;
+    	content: '';
+    	margin-top: 0px;
+    	width: 100%;
+    	border-top: 1px solid #6d6f71;
+    	z-index: 	45454;
+	}
+	.mobMeni i{
+		padding: 10px 20px;
+    	font-size: 30px;
+    	text-transform: uppercase;
+    	color: 	white;
+    	width: 100%;	
+	}
+	.fixedMob{    
+		position: fixed;
+	    top: 0;
+	    left: 0;
+	    background-color: rgba(47, 47, 47,1);
+	    display: block;
+	    width: 100%;
+	    z-index:77777;
+	}
+	header{
+		position: relative;
+		overflow: hidden;
+	}
+	.sectionFirst {
+    	height: 100vh;  
+    	margin-top: -36px;
+	}
+	.textHome h1 {
+    font-size: 30px;
+	}
+	.kocka{
+		margin-bottom: 0px; 
+	}
+	.kocka span {
+    font-size: 0.5em;
+	}
+
+	nav ul li a {
+		font-size: 1em;
+	}
+	.industrije li {
+    	width: 100%;
+    	height: 300px; 
+	}
+	.proizvodni h1 {
+    	display: block;
+    	width: 100%;
+    	text-align: center;
+    	margin-top: 10%;
+    	margin-bottom: 10%;
+	}
+	.sectionFirstMaterial, .sectionFirstGalerija, .sectionFirstContact, .sectionFirstProduct {
+    	background-position: inherit; 
+    	margin-top: -62px;
+	 }
+	 .maps {
+    	width: 100%;
+    	height: 50vh;  
+	}
+	.contSection {
+    	position: relative; 
+    	width: 100%; 
+    	height: auto; 
+    	background-color: transparent;
+    	text-align: center;
+	}
+	.maps {
+     	height: auto;
+    }
+	.contSection table {  
+		margin: auto;
+	}
+	.sectionFirstContact {
+    	background-position: center !important;
+    }
+    footer input, footer textarea {
+    	padding:15px 0px;
+	}
+	.kontakt1 .fa {
+    	font-size: 40px;
+	}
+	.rastojanjeTable td {
+    	padding-right: 15px !important;
+	}
+	.slajder1{
+		overflow: hidden;	
+	} 
+	.textHome h1 {
+    	font-size: 25px !important;
+	}	 
+	h1 {
+    	font-size: 30px;
+	}
+	p, button {
+    	font-size: 14px;  
+	}
+	.vasa span {
+    	font-size: 1em;
+	}
+	.proizvodni {
+    	padding: 0;
+
+	}
+}
+
+@media only screen and (max-width:640px) {
+	.proizvodni {
+    	padding: 0;
+    	
+	}
+	.history, .proivodni, .proivodni p {
+    	padding: 0 5% 0% 5%;
+	}
+	.historyText {
+    width: 100%;
+	}
+	nav{
+		padding: 0 !important;	
+	}
+	.flag ul {
+		padding-top: 10px;
+		padding-right: 10px;
+	}
+
+	.responsiveMeni{
+		display: 	block;	
+	}
+
+
+	.slajd2 {
+    	background-position: center;
+	}
+	.leftNav{
+		display:none;	
+	}
+	.mobMeni {
+    display: block;
+   }
+    .flag{
+	    width: 100%;
+    	flex-direction: column;
+    	align-items: flex-end;
+    }
+    .logoResponsive {
+    	display: block;
+    	width: 100%;
+    	text-align: center;
+	}
+	.mobMeni:before {
+    	left: 0;
+    	position: absolute;
+    	content: '';
+    	margin-top: 0px;
+    	width: 100%;
+    	border-top: 1px solid #6d6f71;
+    	z-index: 	45454;
+	}
+	.mobMeni i{
+		padding: 10px 20px;
+    	font-size: 30px;
+    	text-transform: uppercase;
+    	color: 	white;
+    	width: 100%;	
+	}
+	.fixedMob{    
+		position: fixed;
+	    top: 0;
+	    left: 0;
+	    background-color: rgba(47, 47, 47,1);
+	    display: block;
+	    width: 100%;
+	    z-index:77777;
+	}
+	header{
+		position: relative;
+		overflow: hidden;
+	}
+	.sectionFirst {
+    	height: 100vh;  
+    	margin-top: -36px;
+	}
+	.textHome h1 {
+    font-size: 30px;
+	}
+	.kocka{
+		margin-bottom: 0px; 
+	}
+	.kocka span {
+    font-size: 0.4em;
+	}
+
+	nav ul li a {
+		font-size: 1em;
+	}
+	.history{
+		background-color: #d0d0d0;
+		background-image: none;
+	}
+
+	.rastojanjeTable{
+		display: block;	
+	}
+
+	.velikaTabela{
+		display: none;	
+	}
+	.materijali {
+		overflow: hidden;
+    	padding: 3%;  
+	}
+	.sectionFirstMaterial h1, .sectionFirstGalerija h1, .sectionFirstProduct h1, .sectionFirstContact h1 {
+    	font-size: 3em;
+	}
+	.proizvod {
+    	width: 300px;  
+	} 
+	.sectionFirstMaterial {
+    	height: 70vh;
+		margin-top: -50px;
+	}
+}
+@media only screen and (max-width:360px){
+		.sectionFirst {
+    	height: 75vh;  
+    	margin-top: -36px;
+	}
+}
